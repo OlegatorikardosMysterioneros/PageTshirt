@@ -1,0 +1,179 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.left, .right {
+    text-align: right; /* Изменил на right для выравнивания текста по правому краю */
+}
+
+.center {
+    text-align: center; /* Изменил на center для выравнивания текста по центру */
+}
+
+.logo {
+    width: 40%; /* Ширина будет составлять половину от родительского элемента */
+    height: auto;  
+}
+
+
+.menu {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F2F2EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #cecccc;
+}
+.left-menu .menu-link {
+    margin-right: 10px;
+    color: #CE0000; /* Начальный цвет */
+    text-decoration: none;
+}
+
+
+.left-menu .menu-link:hover,
+.left-menu .menu-link:focus {
+    color: black; /* Цвет при наведении */
+}
+
+.right-menu input[type="text"] {
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+  
+
+}
+
+.right-menu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.menu2 {
+    margin-right: 10px;
+    margin-top: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Выравниваем по горизонтали */
+   
+
+}
+.block4 {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-half, .right-half {
+    flex: 1;
+
+}
+
+.left-half {
+    padding-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-half img {
+    max-width: 100%;
+    max-height: 100%;
+ 
+}
+
+.right-half { 
+    
+    padding-left: 20px; /* Добавляем небольшой отступ между левой и правой половинами */
+    display: flex;
+    flex-direction: column; /* Столбцовая ориентация контента */
+    justify-content: flex-start; /* Начало текста от верха */
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.description, .price, .size, .color, .size-option, .color-option {
+    font-size: 16px;
+}
+
+.price {
+    color: #CE0000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.size-options, .color-options {
+    display: flex;
+    margin-top: 10px;
+}
+
+.size-option, .color-option {
+    border: 2px solid gray;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;  
+   
+}
+.size-option:hover,
+.color-option:hover {
+    border-color: #CE0000; /* Изменяем цвет контура на красный при наведении */
+    cursor: pointer; /* Изменяем курсор на указатель */
+}
+.size-option:active,
+.color-option:active {
+    border-color: #CE0000; /* Изменяем цвет контура на красный при нажатии */
+}
+.buy-button {
+    background-color: #CE0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.save-for-later {
+    color: gray;
+}
+
+.save-for-later a {
+    color: gray;
+    text-decoration: none;
+}
+
+
+.footer {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F2F2EC;
+  
+    text-decoration: none;
+
+    padding: 10px 20px;
+    border: 1px solid #cecccc;
+
+
+    bottom: 0; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
+rgba(230, 247, 241, 0.897); border-top: 1px solid rgb(190, 190, 190);
+}
